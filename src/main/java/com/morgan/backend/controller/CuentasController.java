@@ -42,7 +42,7 @@ public class CuentasController {
     }
 
     @GetMapping("/get/clabe/{clabe}")
-    public ResponseEntity<Cuenta> getCuentaByClabe(@PathVariable("id") String clabe) {
+    public ResponseEntity<Cuenta> getCuentaByClabe(@PathVariable("clabe") String clabe) {
         Cuenta cuenta =  cuentasService.getCuentaByClabe(clabe);
         return ResponseEntity.status(HttpStatus.OK).body(cuenta);
     }
