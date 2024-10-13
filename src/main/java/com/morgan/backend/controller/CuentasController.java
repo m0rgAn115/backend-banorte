@@ -20,26 +20,24 @@ import java.util.List;
 @Validated
 public class CuentasController {
 
-    IContactoService contactoService;
     ICuentasService cuentasService;
 
     @PostMapping("/crear")
-    public ResponseEntity<Contacto> createAccount(@Valid @RequestBody Contacto contacto) {
-            Cuenta cuenta = cuentasService.getCuentaPorId(contacto.getIdCuentaContacto());
-            contactoService.crearContacto(contacto);
-            return new ResponseEntity<>(contacto, HttpStatus.CREATED);
+    public ResponseEntity<Cuenta> createAccount(@Valid @RequestBody Cuenta cuenta) {
+            cuentasService.crearCuenta(cuenta);
+            return new ResponseEntity<>(cuenta, HttpStatus.CREATED);
 
     }
 
     @GetMapping("/get")
-    public ResponseEntity<List<Contacto>> getContactos() {
-        List<Contacto> cuentas = contactoService.getContactos();
+    public ResponseEntity<List<Cuenta>> getCuentas() {
+        List<Cuenta> cuentas = cuentasService.getCuentas();
         return ResponseEntity.ok(cuentas);
     }
 
     @GetMapping("/get/usuario/{id}")
-    public ResponseEntity<List<Contacto>> getCuentasByUsuarioID(@PathVariable("id") Long idUsuario) {
-        List<Contacto> cuentas =  contactoService.getContactosByUsuarioId(idUsuario);
+    public ResponseEntity<List<Cuenta>> getCuentasByUsuarioID(@PathVariable("id") Long idUsuario) {
+        List<Cuenta> cuentas =  cuentasService.getCuentasByUsuarioId(idUsuario);
         return ResponseEntity.ok(cuentas);
     }
 
