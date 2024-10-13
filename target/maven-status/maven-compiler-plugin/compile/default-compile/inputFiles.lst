@@ -1,4 +1,5 @@
 /Users/morgan/Desktop/Proyectos/SpringBoot/Hacknorte/prueba/backend/src/main/java/com/morgan/backend/BackendApplication.java
+/Users/morgan/Desktop/Proyectos/SpringBoot/Hacknorte/prueba/backend/src/main/java/com/morgan/backend/configuration/GlobalCorsConfig.java
 /Users/morgan/Desktop/Proyectos/SpringBoot/Hacknorte/prueba/backend/src/main/java/com/morgan/backend/controller/ContactosController.java
 /Users/morgan/Desktop/Proyectos/SpringBoot/Hacknorte/prueba/backend/src/main/java/com/morgan/backend/controller/CuentasController.java
 /Users/morgan/Desktop/Proyectos/SpringBoot/Hacknorte/prueba/backend/src/main/java/com/morgan/backend/controller/MovimientoController.java

@@ -3,6 +3,7 @@ com/morgan/backend/service/Impl/CuentasServiceImp.class
 com/morgan/backend/controller/ContactosController.class
 com/morgan/backend/controller/UsuariosController.class
 com/morgan/backend/dto/MovimientoDTO.class
+com/morgan/backend/configuration/GlobalCorsConfig$1.class
 com/morgan/backend/repository/CuentaRepository.class
 com/morgan/backend/repository/MovimientosRepository.class
 com/morgan/backend/service/IUsuariosService.class
@@ -17,6 +18,7 @@ com/morgan/backend/service/IContactoService.class
 com/morgan/backend/entity/Movimiento.class
 com/morgan/backend/service/ITransaccionService.class
 com/morgan/backend/entity/Cuenta.class
+com/morgan/backend/configuration/GlobalCorsConfig.class
 com/morgan/backend/controller/MovimientoController.class
 com/morgan/backend/service/Impl/ContactoServiceImp.class
 com/morgan/backend/repository/TransaccionRepository.class
