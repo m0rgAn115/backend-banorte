@@ -9,7 +9,7 @@ LABEL "org.opencontainers.image.authors"="morgan115dev.com"
 EXPOSE 8080
 
 # Add the application's jar to the image
-COPY target/transacciones-0.0.1-SNAPSHOT.jar transacciones-0.0.1-SNAPSHOT.jar
+COPY target/backend-0.0.1-SNAPSHOT.jar backend-0.0.1-SNAPSHOT.jar.jar
 
 # execute the application
-ENTRYPOINT ["java", "-jar", "transacciones-0.0.1-SNAPSHOT.jar"]
+ENTRYPOINT ["java", "-jar", "backend-0.0.1-SNAPSHOT.jar.jar"]
