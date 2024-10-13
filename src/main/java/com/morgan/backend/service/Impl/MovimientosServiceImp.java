@@ -1,4 +1,4 @@
-package com.morgan.backend.service.impl;
+package com.morgan.backend.service.Impl;
 
 import com.morgan.backend.entity.Movimiento;
 import com.morgan.backend.repository.MovimientosRepository;
