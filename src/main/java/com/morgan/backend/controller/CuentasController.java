@@ -32,13 +32,19 @@ public class CuentasController {
     @GetMapping("/get")
     public ResponseEntity<List<Cuenta>> getCuentas() {
         List<Cuenta> cuentas = cuentasService.getCuentas();
-        return ResponseEntity.ok(cuentas);
+        return ResponseEntity.status(HttpStatus.OK).body(cuentas);
     }
 
     @GetMapping("/get/usuario/{id}")
     public ResponseEntity<List<Cuenta>> getCuentasByUsuarioID(@PathVariable("id") Long idUsuario) {
         List<Cuenta> cuentas =  cuentasService.getCuentasByUsuarioId(idUsuario);
-        return ResponseEntity.ok(cuentas);
+        return ResponseEntity.status(HttpStatus.OK).body(cuentas);
+    }
+
+    @GetMapping("/get/clabe/{clabe}")
+    public ResponseEntity<Cuenta> getCuentaByClabe(@PathVariable("id") String clabe) {
+        Cuenta cuenta =  cuentasService.getCuentaByClabe(clabe);
+        return ResponseEntity.status(HttpStatus.OK).body(cuenta);
     }
 
 }
